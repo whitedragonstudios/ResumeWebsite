@@ -80,20 +80,29 @@
             
                 
                 <form action="https://wp.zybooks.com/form-viewer.php" method="POST"> 
-                    <h5>Contact Me </h5>
+                    <h5><mark><strong>Contact Me</strong></mark> </h5>
                     <input type="text" id="fname" name="fname" placeholder="First Name"><br>
                     <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
                     <input type="text" id="company" name="company" placeholder="Company Name>"><br>
                     <input type="email" id="email" name="email" placeholder="Email Address"><br>
                     <input type="tel" id="phone" name="phone" placeholder="Phone Number"><br>
-                    <textarea id="message" name="message" placeholder="Your Message Here"></textarea><br>
+                    <textarea id="message" class ="large_box" name="message" placeholder="Your Message Here"></textarea><br>
                     Best contact time: <br>
-                    <input type="radio" id="amtime" name="ctime" value="am">
-                        <label for="amtime">A.M.</label><br>
-                    <input type="radio" id="pmtime" name="ctime" value="pm">
-                        <label for="pmtime">P.M.</label><br>
-                    <input type="radio" id="anytime" name="ctime" value="anytime">
-                        <label for="anytime">Anytime</label>
+
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="amtime" name="ctime" value="am">
+                            <label for="amtime">A.M.</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="pmtime" name="ctime" value="pm">
+                            <label for="pmtime">P.M.</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="anytime" name="ctime" value="anytime">
+                            <label class= "radioL" for="anytime">Anytime</label>
+                        </div>
+                    </div>
                     <br>Best contact method: <br>
                     <select id="contactmethod" name="contactmethod">
                         <option value="phone">Phone</option>

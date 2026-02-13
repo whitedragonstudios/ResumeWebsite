@@ -98,7 +98,11 @@ a:hover {
     color: #00b7ff;
 }
 
-
+h5{
+    font-size: 50px;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
 
 .contact_form {
     flex: auto;
@@ -106,6 +110,44 @@ a:hover {
     margin: 0 auto;
     align-content: center;
     text-align: center;
-    cursor:default;
     font-size: 30px;
+}
+
+.large_box {
+    width: 30%;
+    height: 300px;
+}
+input, select, textarea {
+    font-size: 20px;
+
+    margin: 5px 0;
+    width: 20%;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Space between each option */
+    margin: 10px 0;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+button {
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: #d3df29;
+    color: rgb(18, 22, 219);
+    transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+    background-color: rgb(18, 22, 219);
+    color: #d3df29;
 }
