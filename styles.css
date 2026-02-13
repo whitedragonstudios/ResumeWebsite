@@ -1,3 +1,9 @@
+
+* {
+    scroll-behavior: smooth;
+    cursor:grab;
+}
+
 body{
     font-family: Arial, sans-serif;
     background-color: black;
@@ -11,7 +17,7 @@ body{
     background-color: #2945c2;
 }
 
-.header-image {
+#header-image {
     flex-shrink: 0;
 }
 
@@ -32,29 +38,55 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    margin: 0;  /* Remove default margin */
-    padding: 0;  /* Remove default padding */
+    margin: 0; 
+    padding: 0; 
 }
 
 nav ul li a {
-    color: rgb(233, 193, 13);
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
+    color: rgb(243, 255, 78);
+    text-decoration: underline;
+    font-size: 30px;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 30px;
 }
 
 nav ul li a:hover {
-    color: #ff0000;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 td{
     vertical-align: top;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+.jobs tr:hover {
+    color:#000000;
+    background-color: #ffffff;
+    text-decoration: underline;
+}
+
 
 article {
-    width: 50%;
+    width: 60%;
+    margin: auto;
+    align-content: center;
 }
 
+.tables {
+    width: 60%;
+    margin: auto;
+    align-content: center;
+}
+
+.letter {
+    width: 60%;
+    margin: auto;
+    align-content: center;
+}
 a{
     color: rgb(233, 193, 13);
     text-decoration: none;
@@ -65,3 +97,6 @@ a{
 a:hover {
     color: #00b7ff;
 }
+
+
+

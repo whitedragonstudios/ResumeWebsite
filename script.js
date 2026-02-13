@@ -11,5 +11,5 @@ function updateDateTime() {
     console.log("Date and time updated");
     }
 updateDateTime();
-setInterval(updateDateTime, 60000);
+setInterval(updateDateTime, 10000);
 console.log("Note this webpage is for informational purposes only");
