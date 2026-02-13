@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Owens Resume</title>
+</head>
+<body>
+    <header>
+        <h1>Ryan Owens Resume</h1>
+        <div class="header-image">
+            <img src="images/profile.jpg" alt="Profile Picture">
+        </div>
+        <div class = navbar> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="cover.html">Cover Letter</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h3> Current time: <span id="datetime"></span></h3>
+    </header>
+
+    <main>
+        <h1> <span>Cover Letter</span> </h1>
+           <p>
+            Ryan Owens <hr>rowens.wds@gmail.com <br><strong>Dear Hiring Manager,</strong><br>
+            I am writing to express my interest in software engineering opportunities where I can apply my programming, database, and systems experience while continuing to grow within a professional development team. My background combines computer science education, hands-on technical work, and self-directed skill development, which has helped me build both a strong technical foundation and the flexibility to adapt quickly to new tools, frameworks, and environments.
+            <br>While I do not come from a traditional software engineering career path, I have intentionally built my technical skill set through structured coursework, independent projects, and practical application. I designed a focused learning curriculum through online programs to efficiently develop skills in Python development, database design, system administration, and modern software engineering practices. This approach reflects how I work professionally: identify the required competencies, learn them quickly, and apply them effectively. 
+            <br>My teaching experience in computer science and STEM has reinforced disciplined problem-solving and clear technical communication. Developing curriculum, troubleshooting technical issues, and working across varied technical environments required approaching problems from multiple angles and adapting quickly when requirements changed. These experiences translate directly to collaborative software development, where flexibility, continuous learning, and practical problem solving are essential.
+            <br>In addition, I actively maintain personal development projects that involve back-end programming, data handling, and system integration. These projects allow me to continue strengthening my engineering skills while demonstrating initiative and practical application beyond formal coursework.
+            <br>I am particularly motivated by roles where adaptability, continuous learning, and strong foundational engineering skills are valued. I bring curiosity, persistence, and a willingness to learn quickly, and I am eager to contribute meaningfully while continuing to grow as a software engineer.
+            <br>Thank you for your time and consideration. I welcome the opportunity to discuss how my skills, adaptability, and ongoing development can support your team.
+            <br><br>Sincerely,
+            <br>Ryan Owens
+           </p>
+           <hr>
+    <h3> <em>Disclaimer:</em> Cover letter was written using ChatGPT</h3>
+    </main>
+
+    <section>
+        <h1> About Me</h1>
+            <article>
+                My name is Ryan Owens, I have rich and complex background and a variety of skills and experinces. 
+                <br>To start at the begining I was born in a very small town in Colorado. However, at a young age I moved overseas and have spent more than half my life living abroad. I have lived in seven different countries and have been exposed to a wide range of cultures and perspectives. This has given me a unique outlook on life and has helped me develop out of the box thinking.
+                <br>I have lived in the United States, Canada, Germany, England, Italy, Saudi Arabia, and Thailand and have traveled to more than fifty countries. I have a passion for learning about different cultures and have always been fascinated by different perspectives on a problem. 
+                <br>This has given me a unique perspective on the world and has helped me develop a strong sense of adaptability and resilience. I am comfortable working in diverse environments and am able to quickly adapt to new situations and challenges. <br>
+                <br> <hr> <br>
+            </article>
+            
+        <h2> Career Path </h2>
+            <article>
+                My career path is equally diverse. In High School I worked in <mark>IT helpdesk</mark> as well as a sound engineer for local rock bands and theater productions. 
+                <br>This led to my Associates degree in Film and Media production. I started at Arizona State University then tansfered to a school, Columbia Academy, in Vancouver, Canada. At the time all the interesting shows and movies were being filmed in Canada. 
+                <br><a href="https://www.imdb.com/name/nm4520345/?ref_=fn_t_6"> Film Credits</a>
+                <br> In the film industry I wore many hats, I started in production as an Assistant Director, Writer, Director and Producer. Then transitioned to Camera Assistant, Grip, and Director of Photography. I believe in a holistic approach to life and wanted to fully understand each aspect of the industry. 
+                <br> After ten years in the film industry I wanted something more stable. I went to Airstreams Wind Technician School to be certified as a Wind Turbine Technician. My hobby of rock climbing and expericne working with high voltage as a Grip was well suited to the Wind Industry. I worked for Next Era Energy one of the leading Green energy companies in the world.
+                <br> After two years the wind site I was working on, was nearly 50 years old, and it was decomissioned. I was laid off sortly before Covid.
+                <br> <hr> <br>
+            </article>
+        <h2> Changing Directions </h2>
+            <article>
+                During covid I took the oppertunity to refocus. Starting in middle school I learned some <mark>Java and HTML</mark>  and had worked on <em>game mods</em> in my free time ever since. I decided I would change directions and expand my coding skills.
+                <br> I started out self taught as well as through <strong>courses from Coursera and Udemy</strong> . I found I liked Python and IoT best so I focused on those skills. 
+                <br> What I like about coding it the problem solving aspect. Even more so the endoevor to write better and better code. I feel that DevOps and/or Software Engineering are best suited to my intrests and skills.
+                <br> That brings us to now, where I enrolled in <em>WGU</em> for a <stong>Bachelors of Science in Software Engineering</stong>. I am excited to continue learning and growing as a developer and to see where this new path takes me.
+                <br> <hr> <br>
+            </article>
+    </section>
+    <footer>
+        <p>Ryan Owens<br>rowens.wds@gmail.com<br></p> <hr>
+        <a href = "https://github.com/whitedragonstudios">GitHub</a> <br>
+        <a href = "https://www.linkedin.com/in/ryan-owens-8b560b120/">LinkedIn</a>
+    </footer>
+
+    <script>
+        function updateDateTime() {
+            var today = new Date();
+            var time = today.getHours() + ":" + today.getMinutes();
+            var formattedDate = time + " "+ today.toDateString() ; 
+            document.getElementById("datetime").textContent = formattedDate;
+            console.log("Date and time updated");
+        }
+        updateDateTime();
+        setInterval(updateDateTime, 60000);
+        console.log("Note this webpage is for informational purposes only");
+    </script>
+
+</body>
+</html>
