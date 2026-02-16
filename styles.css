@@ -23,7 +23,7 @@ body{
 
 .navbar {
     flex-grow: 1;
-    width: 100%;  /* Take full available width */
+    width: 100%;
     padding: 1rem;
     background-color: #2945c2;
 }
@@ -31,7 +31,7 @@ body{
 nav {
     background-color: #5572f3;
     padding: 1rem;
-    width: 100%;  /* Take full width of navbar */
+    width: 100%;
 }
 
 nav ul {
@@ -127,7 +127,7 @@ input, select, textarea {
 .radio-group {
     display: flex;
     justify-content: center;
-    gap: 20px;  /* Space between each option */
+    gap: 20px;
     margin: 10px 0;
 }
 
@@ -150,4 +150,10 @@ button {
 button:hover {
     background-color: rgb(18, 22, 219);
     color: #d3df29;
+}
+
+.skills{
+    border-style: ridge;
+    border-width: 10px;
+    border-color: aqua;
 }
